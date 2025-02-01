@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: linear-gradient(90deg, rgb(0, 60, 64), rgb(23, 23, 23));
+    margin: 0;
+    font-family: Poppins;
+}
+
+p {
+    font-family: Poppins;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    all:unset;
+    display: inline-block;
+}
+
+.sitewelcome {
+    height: 200px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* display: flex;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+    align-items: center; */
+}
+
+.logo {
+    width: 150px;
+    border: 4px double rgb(205, 255, 252);
+    border-radius: 50%;
+    padding:10px;
+    margin-left: 20px;
+}
+
+
+.logodiv, .websiteinfo {
+    margin-top: 20px;
+}
+
+.logodiv {
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.websiteinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 100px;
+    flex:1;
+}
+
+.sitename, .sitetagline {
+    color: white;
+}
+
+.sitename {
+    flex:1;
+    font-size: 60px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-top: -10px;
+}
+
+.sitetagline {
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    padding-left: 15px;
+    background-color: rgba(2, 162, 162, 0.7);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-right: 15px;
+    border:none;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.search-section {
+    display: flex;
+    width: 300px;
+    margin-right: 40px;
+}
+
+.searchbox {
+    font-family: Poppins;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 70px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 5px solid rgb(2, 162, 162);
+}
+
+.searchbutton {
+    height:50px;
+    background-color: rgba(2, 162, 162);
+    border: 5px solid rgb(2, 162, 162);
+    border-left: none;
+    margin-right: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: background-color 0.2s;
+}
+
+.searchbutton:hover {
+    background-color: rgb(0, 60, 64);
+}
+
+.searchicon {
+    height: 20px;
+    margin-top: 2px;
+    margin-right: 10px;
+    
+}
+
+.searchbox:focus{
+    background-color: rgb(0, 60, 64);
+    color: white;
+}
+
+.searchbox:focus::placeholder{
+    color: white;
+}
+
+.tabs {
+    display:flex;
+    width: 100%;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+
+
+.tabs button {
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: none;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(1, 62, 62, 1);
+    flex: 1; 
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tabs button:hover{
+    background-color: white;
+    color:rgba(1, 62, 62, 1);
+    border: 2px solid rgba(1, 62, 62, 1);
+    border-radius: 20px;
+}
+
+marquee {
+    background-color: white;
+    color:rgb(0, 60, 64);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.sidebar {
+    background-color: rgb(0, 60, 64);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right:0;
+    height: 370px;
+    width: 120px;
+    border:3px solid white;
+    border-right: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtertext {
+    height: 20px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.sidebar button{
+    flex:1;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: rgb(17, 122, 130);
+    border:none;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.sidebar button:hover{
+    background-color: rgb(11, 69, 73);
+    border: 2px solid white;
+}
+
+.sidebar button img{
+    height:30px;
+}
+
+.allmovies{
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.movies, .lastmovie {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    border: 10px solid white;
+    background-color: white;
+    padding-right: 10px;
+    margin-left: 30px;
+    margin-right: 200px;
+}
+
+.posterdiv {
+    padding-top: 15px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+    margin-right: 20px;
+    border-top: 10px solid rgb(0, 60, 64);
+}
+
+.poster {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    border: 5px solid rgb(0, 60, 64);
+}
+
+.movieinfo {
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    vertical-align: top;
+    width:970px; /*movies + 230*/
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid rgb(0, 60, 64);
+}
+
+.movietitle {
+    color:rgb(0, 60, 64);
+    font-size: 30px;
+    font-weight: 700;
+    padding-left:10px;
+    padding-top: 10px;
+    
+    border-left: none;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+.dategenre {
+    color:rgba(2, 75, 80, 0.7);
+    font-size: 18px;
+    padding-left: 15px;
+    vertical-align: 4px;
+
+}
+
+.synopsisdiv {
+    background-color: blue;
+}
+
+.synopsis {
+    height: auto;
+    color:rgb(213, 255, 255);
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-style: italic;
+    background-color: rgb(0, 60, 64);
+    border-radius: 10px;
+    margin-bottom: 13px;
+}
+
+.actors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actor {
+    flex: 1;
+    padding-left: 10px;
+    margin-right: 30px;
+    display:inline-block;
+    margin-bottom: 10px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.actorpicdiv, .actorinfo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.actor_pic {
+    border: 2px solid rgb(0, 60, 64);
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.actorinfo {
+    padding-left: 10px;
+}
+
+.actorname, .charname {
+    font-size: 15px;
+}
+
+.actorname {
+    color: rgb(0, 60, 64);
+    font-weight: 600;
+}
+
+.charname {
+    color: rgb(1, 111, 118);
+    font-style: italic;
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.ratings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ratings a{
+    min-width: 200px;
+    flex:1;
+    margin-bottom: 10px;
+}
+
+.siterating {
+    background-color: rgb(0, 60, 64);
+    border-radius: 30px;
+    margin-right: 20px;
+    text-align: center;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.ratinglogo {
+    height: 30px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.ratingnum{
+    display: inline-block;
+    vertical-align: middle;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 18px;
+    border-radius: 10px;
+}
+
+.siterating:hover{
+    background-color: black;
+}
+
+.buyoptions {
+    display:flex;
+    width:100%;
+}
+
+.buyoptions a{
+    flex:1;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgb(0, 60, 64);
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 17px;
+    display: inline-block;
+    box-shadow: 0  5px 10px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.buyoptions a:hover{
+    background-color: black;
+}
+
+.buyoptions a:active{
+    margin-top: 5px;
+    box-shadow: none;
+}
+
+.buytext {
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.buylogo, .jwlogo {
+    height: 25px;
+    vertical-align: middle;
+
+}
+
+a .actor:hover{
+    opacity: 0.6;
+}
+
+.lastmovie {
+    padding-bottom: 20px;
+}
+
+
