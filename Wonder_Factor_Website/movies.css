@@ -262,6 +262,7 @@
 
     .buytext {
         font-size: 15px;
+        white-space: nowrap;
     }
 
     .ratingnum {
