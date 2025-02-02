@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Poppins;
     padding-bottom: 50px;
+    min-width: 100vw;
 }
 
 p {
@@ -206,4 +207,17 @@ marquee {
 
 .sidebar button img{
     height:30px;
+}
+
+@media (max-width: 480px) {
+    .searchbox {
+        width: 100%;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs {
+        grid-template-columns: 1fr 1fr;
+    }
 }

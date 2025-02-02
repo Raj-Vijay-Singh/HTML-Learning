@@ -226,7 +226,6 @@
 .buytext {
     color: white;
     margin-bottom: 6px;
-    white-space: nowrap;
 }
 
 .buylogo {
@@ -250,5 +249,12 @@ a .actor:hover{
 
     .movieinfo {
         border-top: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sitename {
+        white-space: normal;
+        line-height: normal;
     }
 }
