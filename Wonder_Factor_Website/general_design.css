@@ -3,7 +3,6 @@ body {
     margin: 0;
     font-family: Poppins;
     padding-bottom: 50px;
-    min-width: 100vw;
 }
 
 p {
@@ -221,6 +220,6 @@ marquee {
 
     .sidebar {
         display: none;
-        
+
     }
 }
