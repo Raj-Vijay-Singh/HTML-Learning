@@ -208,15 +208,19 @@ marquee {
     height:30px;
 }
 
-@media (max-width: 480px) {
-    .searchbox {
-        width: 70%;
-        padding-right: 20px;
-    }
-}
 
 @media (max-width: 480px) {
     .tabs {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .searchbox {
+        width: 70%;
+        padding-right: 20px;
+    }
+
+    .sidebar {
+        display: none;
+        
     }
 }

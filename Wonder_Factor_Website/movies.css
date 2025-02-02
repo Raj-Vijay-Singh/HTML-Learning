@@ -8,13 +8,13 @@
 .catalog {
     display: flex;
     flex-direction: column;
+    margin: 0 200px 0 20px;
 }
 
 .movies, .lastmovie {
     background-color: white;
     display: grid;
     grid-template-columns: 250px 1fr;
-    margin: 0 200px 0 20px;
     column-gap: 20px;
 }
 
@@ -256,5 +256,21 @@ a .actor:hover{
     .sitename {
         white-space: normal;
         line-height: normal;
+    }
+
+    .catalog {
+        margin: 0 20px 0 20px;
+    }
+
+    .buytext {
+        font-size: 15px;
+    }
+
+    .ratingnum {
+        font-size: 17px;
+    }
+
+    .siterating {
+        width: 120px;
     }
 }
