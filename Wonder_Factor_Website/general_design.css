@@ -53,7 +53,7 @@ a {
 }
 
 .sitename {
-    font-size: clamp(30px, 3.7vw, 80px);
+    font-size: clamp(25px, 3.7vw, 80px);
     font-weight: 700;
     line-height: 70px;
     white-space: nowrap;
