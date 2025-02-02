@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="presentable_TWF_main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="WF_1.0.css">
         <title>
             Wonder Factor
         </title>
@@ -25,7 +24,7 @@
 
             <div class = "search-section">
                 <input placeholder="Search" class="searchbox">
-                <button class="searchbutton"><img src="Misc_Pics/magnifying-glass.svg" class="searchicon"></button>
+                <button class="searchbutton"><img src="Misc_Pics/search-button.png" class="searchicon"></button>
             </div>
         </div>
         <div class="tabs">
@@ -55,8 +54,18 @@
         </div>
 
         <marquee scrollamount = 10 scrolldelay = 80>This layout is merely created for the purpose of learning the basics of webpage layout designing with HTML and CSS.
-            Created by Raj Vijay Singh — B.Tech AI & DS 3rd Sem.
+            Created by Raj Vijay Singh — B.Tech AI & DS 4th Semester.
         </marquee>
+
+        <div class="sidebar">
+            <p class="filtertext">Filter by:</p>
+            <button class="filter-genre"><img src="Misc_Pics/genre.png" class="genreicon"></button>
+            <button class="filter-year"><img src="Misc_Pics/year.webp" class="yearicon"></button>
+            <button class="filter-lang"><img src="Misc_Pics/lang.png" class="langicon"></button>
+            <button class="filter-other"><img src="Misc_Pics/other.png" class="othericon"></button>
+        </div>
+
+
         <div class="allmovies">
             <div class = "movies">
                 <div class="posterdiv">
@@ -64,9 +73,12 @@
                 </div>
                 <div class = "movieinfo">
                     <p class="movietitle">INTERSTELLAR <span class="dategenre">2014 &#xb7 Sci-Fi</span></p>
+                    
                     <p class = "synopsis">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, 
                         is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.
                     </p>
+                
+                <div class="actors">
                     <a href="https://www.imdb.com/name/nm0000190/" target="_blank">
                     <div class="actor">
                         <div class = "actorpicdiv">
@@ -83,7 +95,7 @@
                     <a href="https://www.imdb.com/name/nm0004266/" target="_blank">
                     <div class="actor">
                         <div class = "actorpicdiv">
-                            <img src = "Actors/anne.jpg" class = "actor_pic">
+                            <img src = "Actors/Anne.jpg" class = "actor_pic">
                         </div>
 
                         <div class = "actorinfo">
@@ -105,6 +117,7 @@
                         </div>
                     </div>
                     </a>
+                </div>
 
                     <div class="ratings" >
                         <a href="https://www.imdb.com/title/tt0816692/" target="_blank">
@@ -140,7 +153,7 @@
                     <div class = "buyoptions">
                         
                         <a class = "amznbtn" href="https://www.amazon.com/InterStellar-4K-UltraHD-Blu-ray-Interstellar/dp/B0767FCYDW/ref=sr_1_1?sr=8-1#" target="_blank">
-                            <img src = "Misc_Pics/Amazon.png" class = "buylogo"> <span class="buytext">Buy from Amazon</span>
+                            <img src = "Misc_Pics/amazon.png" class = "buylogo"> <span class="buytext">Buy on Amazon</span>
                         </a>
                     
                         <a class = "jwbtn" href="https://www.justwatch.com/in/movie/interstellar" target="_blank">
@@ -160,6 +173,8 @@
                     <p class = "synopsis">A fading celebrity takes a black-market drug: a cell-replicating substance that temporarily creates a younger, better version of herself.
                     </p>
                     <a href="https://www.imdb.com/name/nm0000193/" target="_blank">
+
+                    <div class = "actors">
                     <div class="actor">
                         <div class = "actorpicdiv">
                             <img src = "Actors/moore.jpeg" class = "actor_pic">
@@ -197,6 +212,7 @@
                         </div>
                     </div>
                     </a>
+                    </div>
 
                     <div class="ratings">
                         <a href="https://www.imdb.com/title/tt17526714/" target="_blank">
@@ -232,7 +248,7 @@
                     <div class = "buyoptions">
                         
                         <a class = "amznbtn" href="https://www.amazon.com/Substance-Blu-Ray-Coralie-Fargeat/dp/B0DMWTK3N8/ref=sr_1_2?sr=8-2" target="_blank">
-                            <img src = "Misc_Pics/Amazon.png" class = "buylogo"> <span class="buytext">Buy from Amazon</span>
+                            <img src = "Misc_Pics/amazon.png" class = "buylogo"> <span class="buytext">Buy on Amazon</span>
                         </a>
                     
                         <a class = "jwbtn" href="https://www.justwatch.com/in/movie/the-substance" target="_blank">
@@ -253,6 +269,7 @@
                         </p>
                     <a href="https://www.imdb.com/name/nm2032150/" target="_blank">
                     
+                    <div class = "actors">
                     <div class="actor">
                         <div class = "actorpicdiv">
                             <img src = "Actors/Baldoni.jpg" class = "actor_pic">
@@ -268,7 +285,7 @@
                     <a href="https://www.imdb.com/name/nm0827561/" target="_blank">
                     <div class="actor">
                         <div class = "actorpicdiv">
-                            <img src = "Actors/Ste.jpg" class = "actor_pic">
+                            <img src = "Actors/ste.jpg" class = "actor_pic">
                         </div>
 
                         <div class = "actorinfo">
@@ -290,7 +307,7 @@
                         </div>
                     </div>
                     </a>
-                
+                    </div>
 
                     <div class="ratings">
                         <a href="https://www.imdb.com/title/tt2866360/" target="_blank">
@@ -326,7 +343,7 @@
                     <div class = "buyoptions">
                         
                         <a class = "amznbtn" href="https://www.amazon.com/Coherence-Emily-Baldoni/dp/B00PHL8W6G/ref=sr_1_2?sr=8-2">
-                            <img src = "Misc_Pics/Amazon.png" class = "buylogo"> <span class="buytext">Buy from Amazon</span>
+                            <img src = "Misc_Pics/amazon.png" class = "buylogo"> <span class="buytext">Buy on Amazon</span>
                         </a>
                     
                         <a class = "jwbtn" href="https://www.justwatch.com/in/movie/coherence" target="_blank">
@@ -348,6 +365,7 @@
                         If she wishes to return to her real father, Ofelia must complete three terrifying tasks.
                         </p>
 
+                    <div class = "actors">
                     <a href="https://www.imdb.com/name/nm1419440/" target="_blank">
                     <div class="actor">
                         <div class = "actorpicdiv">
@@ -386,6 +404,7 @@
                         </div>
                     </div>
                     </a>
+                    </div>
 
                     <div class="ratings">
                         <a href="https://www.imdb.com/title/tt0457430/" target="_blank">
@@ -421,7 +440,7 @@
                     <div class = "buyoptions">
                         
                         <a class = "amznbtn" href="https://www.amazon.com/Pans-Labyrinth-4K-Ultra-Blu-ray/dp/B07RG2XR16/ref=sr_1_1?sr=8-1">
-                            <img src = "Misc_Pics/Amazon.png" class = "buylogo"> <span class="buytext">Buy from Amazon</span>
+                            <img src = "Misc_Pics/amazon.png" class = "buylogo"> <span class="buytext">Buy on Amazon</span>
                         </a>
                     
                         <a class = "jwbtn" href="https://www.justwatch.com/in/movie/pans-labyrinth" target="_blank">
@@ -442,6 +461,7 @@
                     <p class = "synopsis">Following clues to the origin of mankind, a team finds a structure on a distant moon, but they soon realize they are not alone.
                         </p>
 
+                    <div class = "actors">
                     <a href="https://www.imdb.com/name/nm0636426/" target="_blank">
                     <div class="actor">
                         <div class = "actorpicdiv">
@@ -480,6 +500,7 @@
                         </div>
                     </div>
                     </a>
+                    </div>
 
                     <div class="ratings">
                         <a href="https://www.imdb.com/title/tt1446714/" target="_blank">
@@ -515,7 +536,7 @@
                     <div class = "buyoptions">
                         
                         <a class = "amznbtn" href="https://www.amazon.com/PROMETHEUS-UHD-DHD-V2-4K/dp/B06Y1WXP23/ref=sr_1_1?sr=8-1">
-                            <img src = "Misc_Pics/Amazon.png" class = "buylogo"> <span class="buytext">Buy from Amazon</span>
+                            <img src = "Misc_Pics/amazon.png" class = "buylogo"> <span class="buytext">Buy on Amazon</span>
                         </a>
                     
                         <a class = "jwbtn" href="https://www.justwatch.com/in/movie/prometheus" target="_blank">

@@ -1,0 +1,253 @@
+.allmovies{
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+}
+
+.movies, .lastmovie {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    margin: 0 200px 0 20px;
+    column-gap: 20px;
+}
+
+.posterdiv {
+    min-height: 340px;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    border-top: 10px solid rgb(0, 60, 64);
+}
+
+.poster {
+    height: auto;
+    width: 210px;
+    border: 5px solid rgb(0, 60, 64);
+}
+
+.movieinfo {
+    font-family: Poppins;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: white;
+    border-top: 10px solid rgb(0, 60, 64);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movietitle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color:rgb(0, 60, 64);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.dategenre {
+    color:rgba(2, 75, 80, 0.7);
+    font-size: 18px;
+    padding-left: 20px;
+    align-self: center;
+}
+
+.movietagline {
+    height: auto;
+    color:rgb(213, 255, 255);
+    font-size: 13px;
+    background-color: rgb(2, 162, 162);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 3px 20px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.synopsis {
+    height: auto;
+    color:rgb(213, 255, 255);
+    font-size: 13px;
+    font-style: italic;
+    background-color: rgb(0, 60, 64);
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.actors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.actor {
+    display:flex;
+    align-items: center;
+    margin: 0 5px;
+    justify-content: center;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.actorpicdiv {
+    display: flex;
+    place-items: center;
+}
+
+.actorinfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.actor_pic {
+    border: 2px solid rgb(0, 60, 64);
+    border-radius: 50%;
+    width:50px;
+    object-fit: cover;
+}
+
+.actorname, .charname {
+    text-align: center;
+    font-size: 15px;
+}
+
+.actorname {
+    color: rgb(0, 60, 64);
+    font-weight: 600;
+}
+
+.charname {
+    color: rgb(1, 111, 118);
+    font-style: italic;
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.ratings {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.siterating {
+    width: 200px;
+    display:flex;
+    background: linear-gradient(120deg, rgb(0, 60, 64), rgb(0,0,0), rgb(0, 132, 134));
+    border-radius: 30px;
+    transition: background-color 0.2s, padding-left 0.2s, padding-right 0.2s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    margin: 0 10px;
+}
+
+.ratinglogodiv{
+    display: flex;
+}
+
+.ratinglogo {
+    height: 30px;
+}
+
+.ratingnum{
+    vertical-align: middle;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.siterating:hover{
+    background-color: black;
+}
+
+.buyoptions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.buybtn{
+    height: 30.8px;
+    width:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(70deg, rgb(0, 60, 64), rgb(0, 123, 117));
+    border-radius: 30px;
+    font-size: 17px;
+    box-shadow: 0  5px 10px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.2s;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: 0 10px;
+}
+
+.jwlogo {
+    height: 30px;
+    margin-top: 4px;
+}
+
+.buybtn:hover{
+    background-color: black;
+}
+
+.buybtn:active{
+    margin-top:5px;
+    box-shadow: none;
+}
+
+.buytext {
+    color: white;
+    margin-bottom: 6px;
+}
+
+.buylogo {
+    height: 25px;
+    vertical-align: middle;
+}
+
+a .actor:hover{
+    opacity: 0.6;
+}
+
+.lastmovie {
+    padding-bottom: 20px;
+}
+
+
+@media (max-width:960px) {
+    .movies {
+        grid-template-columns: 1fr;
+    }
+
+    .movieinfo {
+        border-top: none;
+    }
+}
