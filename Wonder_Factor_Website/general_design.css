@@ -207,6 +207,46 @@ marquee {
     height:30px;
 }
 
+.searchpopupContainer {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.searchpopup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 20px;
+    background: line;
+    background: linear-gradient(180deg, rgb(0, 60, 64), rgb(0, 172, 170));
+    color: white;
+    font-size: 3vw;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.closepopup {
+    background: linear-gradient(90deg, rgb(254, 255, 255), rgb(142, 142, 142));
+    font-size: 1.3vw;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    transition: opacity 0.2s ease;
+}
+
+.closepopup:hover {
+    opacity: 0.7;
+}
+
 
 @media (max-width: 480px) {
     .tabs {
@@ -222,4 +262,29 @@ marquee {
         display: none;
 
     }
+
+    .searchpopup {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+
+    .closepopup {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.logo {
+    animation: spin 5s linear infinite;
 }
